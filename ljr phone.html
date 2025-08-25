@@ -9,21 +9,28 @@
     body {
         background-color: darkseagreen;
         color:lightcyan;
-        flex-wrap: nowrap;
+        flex-wrap: row nowrap;
+        justify-content: space-evenly;
+        flex-basis: 100 px;
     }
     img {
-        width: 500px;
-        height: 500px;
-        flex-flow:row;
-        justify-content: baseline;
-        flex-basis: 50px;
+        min-width: 50px;
+        max-width: 500;
+        min-height: 50;
+        max-height: 500px;
+        flex-flow: row wrap;
+        flex-shrink: 2;
+        flex-grow: 1;
     }
     div.img {
-    width: 50px;
-    height: 50px;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    flex-basis: 50px;
+    color: rgb(21, 32, 32);
+    border: 11px solid black;
+    border-radius: 5px;
+    flex-flow: row wrap;
+    flex-shrink: 2;
+    flex-grow: 1;
 }
     icone {
         background-color:cyan  ;
@@ -74,7 +81,7 @@
 </head>
 <body>
 <h1>LJr phone</h1>
-<div class="conteiner">
+<div class="img">
     <img src="phone 274.webp" alt="celular">
 </div>
  <h1>Crie seu cadastro de usuário LJR</h1>
@@ -110,16 +117,21 @@
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
        <i id="icones" class="material-icons" onclick="clickmenu()">menu</i>
         <menu id="itens">
+            <div class="img">
+                <img src="fotos1.webp" alt="">
+                <img src="relogio.webp" alt="">
+                <img src="telefone.webp" alt="">
+                <img src="musicas.webp" alt="">
+                <img src="email.webp" alt="">
+                <img src="agenda e calculadora.webp" alt="">
+            </div>
             <ul>
-          <li><a href="ljr contatos.webp">contatos</a></li>  
-           <li><a href="relógio.webp">relogio</a></li> 
-            <li><a href="agenda.webp">agenda</a></li>  
-             <li><a href="ljr fotos.webp">fotos</a></li>
-              <li><a href="ljr music.webp">musicas</a></li>  
-               <li><a href="ljr media.webp">media</a></li>  
-                <li><a href="ljr pdf.webp">PDF</a></li>  
-                 <li><a href="calculadora.webp">calculadora</a></li>
-                  <li><a href="ljr emails.webp">email</a></li>   
+          <li><a href="telefone.webp">telefone</a></li>  
+           <li><a href="relogio.webp">relogio</a></li> 
+            <li><a href="agenda e calculadora.webp">agenda</a></li>  
+             <li><a href="fotos1.webp">fotos</a></li>
+              <li><a href="musicas.webp">musicas</a></li>  
+                  <li><a href="email.webp">email</a></li>   
                  </ul> 
         </menu>
     </section>
