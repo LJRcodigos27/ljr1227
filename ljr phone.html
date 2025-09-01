@@ -15,22 +15,21 @@
     }
     img {
         min-width: 50px;
-        max-width: 500;
+        max-width: 300;
         min-height: 50;
         max-height: 500px;
         flex-flow: row wrap;
         flex-shrink: 2;
         flex-grow: 1;
     }
-    div.img {
+    div.fotos {
+        display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     color: rgb(21, 32, 32);
     border: 11px solid black;
     border-radius: 5px;
-    flex-flow: row wrap;
-    flex-shrink: 2;
-    flex-grow: 1;
+    flex: auto;
 }
     icone {
         background-color:cyan  ;
@@ -67,16 +66,6 @@
         color: cornflowerblue;
         border: black;
     }
-    section img  {
-        position:relative;
-        width: 50;
-        height: 50;
-        flex-flow: row nowrap;
-        flex-basis: 50px;
-    border-radius: 50%;
-    }
-
-
 </style>
 </head>
 <body>
@@ -117,7 +106,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
        <i id="icones" class="material-icons" onclick="clickmenu()">menu</i>
         <menu id="itens">
-            <div class="img">
+            <div class="fotos">
                 <img src="fotos1.webp" alt="">
                 <img src="relogio.webp" alt="">
                 <img src="telefone.webp" alt="">
